@@ -1,0 +1,30 @@
+      /*** General ***/
+h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+      /*** HEADER ***/
+/*Barra de navegacion*/
+header .navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+header .navbar-default {
+  background-color: #27AD60;
+  border-color: #27AD60;
+  padding: 2% 5%; 
+}
+header .navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: 400; 
+}
+header .navbar-default .navbar-nav > li > a:hover {
+  background-color: whitesmoke;
+  color: #27AD60; 
+}
+header .navbar-default .navbar-collapse {
+  border-color: transparent; 
+}
+header .navbar-default .navbar-toggle:hover {
+  background-color: whitesmoke; 
+}
