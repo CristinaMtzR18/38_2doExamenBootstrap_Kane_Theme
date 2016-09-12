@@ -26,6 +26,13 @@
 	  font-weight: normal;
 	  padding: 0% 4%;
 	}
+	.parrafo {
+	  line-height: 15px !important;
+	  font-size: 1em !important;
+	  /*Linea de la letra normal, sin el se hace muy gruesa*/
+	  font-weight: normal;
+	  padding: 0% 4%; 
+	}
 }
 /* Dispositivos medianos (ordenadores, anchura mayor o igual a 992px) */
 @media (max-width: 992px) {
@@ -43,7 +50,7 @@
 	  font-weight: 400;
 	}
 	/*Parrafo*/
-	p {
+	p, .parrafo{
 	  line-height: 20px !important;
 	  font-size: 1.5em !important;
 	  /*Linea de la letra normal, sin el se hace muy gruesa*/

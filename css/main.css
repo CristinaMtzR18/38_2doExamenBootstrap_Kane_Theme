@@ -428,21 +428,6 @@ hijos*/
 }
       /*** FOOTER ***/
 /*NOTA: De aqui en adelante me perdi en entre tantos selectores*/
-.image {
-  background-image: url("../img/img-divider-img.jpg");
-  background-position: 30% 35%;
-  height: 20vh; }
-
-.social {
-  background-image: url("../img/img-divider-img.jpg");
-  background-size: cover;
-  background-position: 20% 10%;
-  height: 55vh;
-  padding-top: 2%; }
-  .social a {
-    font-size: 7em;
-    margin-right: 1.5%; }
-
 footer {
   padding: 1% 0%; 
 }
