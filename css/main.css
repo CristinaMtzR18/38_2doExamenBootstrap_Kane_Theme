@@ -195,7 +195,7 @@ hijos*/
 .quinta .acuarela:last-child {
   background-color: #DC403B; 
 }
-      /*** section ABOUT US ***/
+      /*** SECTION ABOUT US ***/
 /*Para mi padre contenedor de metricas*/
 .barras {
   margin-top: 8%; 
@@ -207,13 +207,184 @@ hijos*/
   border: 2px solid #F5F5F5;
   margin-bottom: 0; 
 }
+/*Color para medir el porcentaje del progreso*/
 .progress-bar-warning {
   background-color: #E67E22; 
 }
+/*Cambiar el ancho de la imagen*/
 .agencia{
   width: 75%;
   margin-left: 10%; 
 }
+      /*** SECTION SERVICIOS ***/
+/*Tamaño de ancho, padding y margen no solo para SERVICIOS, tambien para otras secciones*/
+.bg-gray, .miembros .bg-gray, footer .bg-gray {
+  padding: 12%;
+  margin: 3% 0%;
+  width: 90%; 
+}
+/*Efecto de pasar el mousse sobre los elementos, usando alfa para no afectar a los elementos*/
+.bg-gray:hover, .miembros .bg-gray:hover, footer .bg-gray:hover {
+  background: rgba(0, 0, 0, 0.4); 
+}
+/*Otro efecto de hover sobre subtitulo*/
+.bg-gray:hover h3, .miembros .bg-gray:hover h3, footer .bg-gray:hover h3 {
+  color: #E67E22; 
+}
+/*Efecto hover para las lineas hechas con hr*/
+.bg-gray:hover hr, .miembros .bg-gray:hover hr, footer .bg-gray:hover hr {
+  border-top: 1px solid white; 
+}
+/*Efecto hover para las imagenes grandes, los iconos*/
+.bg-gray:hover .bg-icon, .miembros .bg-gray:hover .bg-icon, footer .bg-gray:hover .bg-icon {
+  background-image: none;
+  background-color: #8F5F38;
+  /*Código para rotar un poco la imagen*/
+  transform: rotate(45deg); 
+}
+/*Color un poco gris para los <p> de las secciones que tienen fondo verde*/
+.bg-gray p, .miembros .bg-gray p, footer .bg-gray p {
+  color: #98BAA7; 
+}
+/*Cambio de linea para las secciones en comun*/
+.bg-gray hr, .miembros .bg-gray hr, footer .bg-gray hr {
+  border-top: 1px solid #27AD61; 
+}
+/*Imagen de fondo para los iconos en las secciones con fondo verde*/
+.bg-gray .bg-icon, .miembros .bg-gray .bg-icon, footer .bg-gray .bg-icon {
+  background-image: url("../img/icon-bg.png");
+  background-color: #2C3E50;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+/*Establecimiento de ancho y margnes para las imagenes de las secciones de fondo verde*/
+.bg-gray .bg-icon img, .miembros .bg-gray .bg-icon img, footer .bg-gray .bg-icon img {
+  width: 80%;
+  margin: auto; 
+}
+/*Mi boton es la clase que acomoda los estilos a como yo quiero*/
+.myBotton{
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white; 
+}
+      /*** MIEMBROS DE EQUIPO ***/
+/*Modifico el ancho de la imagen del miembro. img-responsive no ayuda mucho*/
+.miembros img{
+  width: 70%; 
+}
+/*Colocar la foto del miembro del equipo*/
+.descripcion .img-wo{
+  width: 140px;
+  height: 140px;
+  background-image: url("../img/team/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto; 
+}
+/*Modificar color de texto de las secciones verde a un tipo gri*/
+.descripcion .line-text{
+  color: #2C3E50; 
+}
+/*modificacion del hr de las secciones verdes para que sean punteadas y color girs ligeramente maás oscuro*/
+.descripcion hr{
+  border-top: 1px dashed #98BAA7; 
+}
+/*cambio de color de mis parrafos a un color gris*/
+.descripcion p{
+  font-size: 0.9em;
+  color: #98BAA7; 
+}
+/*Cambio de tamaño en los iconos de redes sociales*/
+.descripcion .red-social{
+  font-size: 2em;
+  margin-top: 8%; 
+}
+/*Cambio de color de los iconos de redes sociales*/
+.descripcion .red-social a{
+  color: #98BAA7; 
+}
+/*Efecto del hover al pasar por el icono usando un ligero gris*/
+.descripcion .red-social a:hover{
+  color: whitesmoke; 
+}
+      /*** SECCION PRECIOS ***/
+/*Experimentando cambio de tactica, Poner clase a la seccion*/
+.precio .green{
+  border: 1px solid #27AD60;
+  width: 100%;
+  margin: 40% 0% 20%; 
+}
+/*Efecto al pasar el mouse sobre mi tabla*/
+.precio .green:hover{
+  border: 1px solid #E67E22;
+  transform: translateY(-50px); 
+}
+/*Cambio de padding al no tener color de fondo*/
+.precio .green .no-bg td{
+  padding: 3%; 
+}
+/*Cambio de color de texto y tambaño*/
+.precio .green .no-bg:first-child{
+  color: #98BAA7;
+  font-size: 1.5em; 
+}
+/*Uso de padding interna en la tabla*/
+.precio .green .no-bg:first-child td{
+  padding: 5%; 
+}
+/*Efecto de cambio de color*/
+.precio .green .bg-brown{
+  background-color: #8F5F38; 
+}
+/*Usando mas padding interno en mi tabla*/
+.precio .green .bg-brown td{
+  padding: 3%; 
+}
+/* Cambio de colores verde y gris de letra*/
+.precio .green .bg-brown:first-child{
+  color: #98BAA7;
+  font-size: 1.5em; 
+}
+/*Padding a mi tabla*/
+.precio .green .bg-brown:first-child td{
+  padding: 5%; 
+}
+.precio .green .bg-white{
+  background-color: white;
+  color: black; 
+}
+.precio .green .bg-white td{
+  padding: 3%;
+}
+.precio .green .bg-green{
+  background-color: #27AD60;
+  font-size: 0.9em; 
+}
+.precio .green .bg-green td{
+  padding: 5%; 
+}
+.precio .green .bg-green span {
+  font-size: 3.8em; 
+}
+.precio .green button{
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white;
+  padding: 3% 5%;
+  margin: 15% 0%; 
+}
+
+.
     /*** UTILIDADES***/
 /*Colores de texto*/
 .text-white{
@@ -223,7 +394,13 @@ hijos*/
 .bg-blue{
   background-color: #2C3E50;
 }
+.bg-green {
+  background-color: #27AD60;
+}
 /*Margin*/
+.mgt-15{
+  margin-top: 15%; 
+}
 /*Padding*/
 .pd-4-0{
 padding: 4% 0%; 
