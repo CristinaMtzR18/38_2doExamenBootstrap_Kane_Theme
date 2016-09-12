@@ -17,32 +17,33 @@ header .navbar {
   margin-bottom: 0;
 }
 /*Cambio de color de fondo*/
-header .navbar-default {
+.navbar-default {
   background-color: #27AD60;
   border-color: #27AD60;
   padding: 2% 5%; 
 }
 /*Cambio de color y tamaño de las opciones del menú*/
-header .navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
   color: white;
   font-weight: 400; 
 }
 /*Efecto de pasar el mouse sobre las opciones de menú*/
-header .navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover {
   /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
   background-color: whitesmoke;
   color: #27AD60; 
 }
 /*Al colapsar el fondo de la barra de navegacion se hace tranapartne*/
-header .navbar-default .navbar-collapse {
+.navbar-default .navbar-collapse {
   border-color: transparent; 
 }
 /*Efecto de pasar el mouse sobre las opciones de menú cuandose comprime*/
-header .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover {
   /*El color whitesmoke con el código de color hexadecimal #f5f5f5 es una sombra muy claro de gris*/
   background-color: whitesmoke; 
 }
-      /*** Section BANNER ***/
+      /*** SECTION BANNER ***/
+/*Establezco mi imagen de fondo*/
 .banner {
   background-image: url("../img/carousel-bg.jpg");
   background-size: cover;
@@ -50,18 +51,183 @@ header .navbar-default .navbar-toggle:hover {
   background-repeat: no-repeat;
   padding: 1%;
 }
+/*Esto me ayuda a poner espacio entre el titulo y el parrafo*/
 .banner h2 {
   margin-bottom: 4%;
 }
+/*Se modifica el parrafo*/
 .banner p {
   line-height: 35px;
   font-size: 1.8em;
+  /*Linea de la letra normal, sin el se hace muy gruesa*/
   font-weight: normal;
   padding: 0% 4%;
+}
+      /*** SECTION PALETA DE COLORES ***/
+/*acquarella. Palabra italina que se refiere a la pintura sobre cartulina con colores diluidos en agua*/
+.acquarella hr {
+  border-top: 1px solid #2C3E50; 
+}
+/*Bloque de color, tamaño y margenes*/
+.acuarela {
+  display: inline-block;
+  width: 180px;
+  height: 110px;
+  margin: 10px -4px 3px; 
+}
+/*Inicia colores de la paleta, es preferible usar selectores que ids para llevar un orden
+entre las lineas de colores*/
+/*Primera fila*/
+/*first-child se usa para aplicar el estilo unicamente a los elementos que son los primeros
+hijos. "primera" es padre de "acuarela"*/
+.primera .acuarela:first-child {
+    background-color: #69D2E7; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(2) {
+    background-color: #A7DBDB; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(3) {
+  background-color: #E0E4CC; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.primera .acuarela:nth-child(4) {
+  background-color: #F38630; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.primera .acuarela:last-child {
+  background-color: #FA6900; 
+}
+/*Segunda fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.segunda .acuarela:first-child {
+  background-color: #E94C6F; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.
+ Se necesita cambiar de color de letra por el tipo del color de fondo*/
+.segunda .acuarela:nth-child(2) {
+  background-color: #542733;
+  color: white;
+  font-weight: normal; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.segunda .acuarela:nth-child(3) {
+  background-color: #5A6A62; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.segunda .acuarela:nth-child(4) {
+  background-color: #C6D5CD; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.segunda .acuarela:last-child {
+  background-color: #FDF200;
+}
+/*Tercera fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.tercera .acuarela:first-child {
+  background-color: #DB3340; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(2) {
+  background-color: #E8B71A;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(3) {
+  background-color: #F7EAC8;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.tercera .acuarela:nth-child(4) {
+  background-color: #1FDA9A; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.tercera .acuarela:last-child {
+  background-color: #28ABE3; 
+}
+/*Cuarta fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.cuarta .acuarela:first-child {
+  background-color: #588C73;
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(2) {
+  background-color: #F2E394; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(3) {
+  background-color: #F2AE72; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.cuarta .acuarela:nth-child(4) {
+  background-color: #D96459; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.cuarta .acuarela:last-child {
+  background-color: #8C4646; 
+}
+/*Quinta fila*/
+/*First-child se upas para aplicar el estilo unicamente a los elementos que son los primeros
+hijos*/
+.quinta .acuarela:first-child {
+  background-color: #D0C91F; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(2) {
+  background-color: #85C4B9; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(3) {
+  background-color: #008BBA; 
+}
+/*nth-child me permite seleccionar cualquier hijo de un elemento despues del primer hijo.*/
+.quinta .acuarela:nth-child(4) {
+  background-color: #DF514C; 
+}
+/*last-child se usa para aplicar el estilo unicamente a los elementos que son los ultimos
+hijos*/
+.quinta .acuarela:last-child {
+  background-color: #DC403B; 
+}
+      /*** section ABOUT US ***/
+/*Para mi padre contenedor de metricas*/
+.barras {
+  margin-top: 8%; 
+}
+/*Medir mi barra de progreso*/
+.progress {
+  border-radius: 0;
+  height: 10px;
+  border: 2px solid #F5F5F5;
+  margin-bottom: 0; 
+}
+.progress-bar-warning {
+  background-color: #E67E22; 
+}
+.agencia{
+  width: 75%;
+  margin-left: 10%; 
 }
     /*** UTILIDADES***/
 /*Colores de texto*/
 .text-white{
   color: white;
 }
+/*Colores de fondo*/
+.bg-blue{
+  background-color: #2C3E50;
+}
 /*Margin*/
+/*Padding*/
+.pd-4-0{
+padding: 4% 0%; 
+}
+.pd-4{
+padding: 4%; 
+}
