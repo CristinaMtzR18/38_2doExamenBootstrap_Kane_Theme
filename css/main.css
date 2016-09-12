@@ -357,23 +357,29 @@ hijos*/
 .precio .green .bg-brown:first-child td{
   padding: 5%; 
 }
+/*Cambio de color de fondo entre verde y blanco*/
 .precio .green .bg-white{
   background-color: white;
   color: black; 
 }
+/*Modificacion de mi padding dentro de la tabla con las clases señaladas*/
 .precio .green .bg-white td{
   padding: 3%;
 }
+/*Cambio de color de fondo y tamaño de letra*/
 .precio .green .bg-green{
   background-color: #27AD60;
   font-size: 0.9em; 
 }
+/*Modificacion de paddin en mis clases de green*/
 .precio .green .bg-green td{
   padding: 5%; 
 }
+/*Cambio de letra*/
 .precio .green .bg-green span {
   font-size: 3.8em; 
 }
+/*Modificacion del boton para las clases verde*/
 .precio .green button{
   background-color: #443E44;
   border: none;
@@ -383,12 +389,97 @@ hijos*/
   padding: 3% 5%;
   margin: 15% 0%; 
 }
+      /*** SECCION COMENTARIOS DE CLIENTES ***/
+/*Estilos para mi parrafo del comentario*/
+.parrafo {
+  color: #B0B2B4;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0% 20%;
+  margin: 5% 0% 2%; 
+}
+/*Estilos para el nombre del autor*/
+.parrafo .text-orange {
+    color: #E67E22;
+    font-style: normal; 
+}
+      /*** SECCION CONTACTO ***/
+/*Margin*/
+.formulario form {
+  margin: 4% auto;
+  width: 65%; 
+}
+/*Modificar text area*/
+.formulario form textarea {
+    height: 150px; 
+}
+/*Modificando mi boton*/
+.formulario form .btn-default {
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white; 
+}
+/*Para el <p> utilizo los datos requeridos*/
+.formulario form p:last-child {
+    text-align: left; 
+}
+      /*** FOOTER ***/
+/*NOTA: De aqui en adelante me perdi en entre tantos selectores*/
+.image {
+  background-image: url("../img/img-divider-img.jpg");
+  background-position: 30% 35%;
+  height: 20vh; }
 
-.
+.social {
+  background-image: url("../img/img-divider-img.jpg");
+  background-size: cover;
+  background-position: 20% 10%;
+  height: 55vh;
+  padding-top: 2%; }
+  .social a {
+    font-size: 7em;
+    margin-right: 1.5%; }
+
+footer {
+  padding: 1% 0%; 
+}
+footer p {
+  font-size: 1.1em; 
+}
+footer .news .input-group-sm > .input-group-addon {
+  line-height: 0;
+  color: #E67E22; 
+}
+footer .news button {
+  background-color: #443E44;
+  border: none;
+  font-size: 1.2em;
+  padding: 1% 1.5%;
+  color: white;
+  font-size: 1.1em;
+  padding: 2% 3%;
+  margin-top: 6%;
+}
+footer .last-row {
+  margin-top: 2%; 
+}
+footer .last-row p {
+  float: left;
+  color: #2C3E50; 
+}
+footer .last-row p a {
+  margin-left: 5px; 
+}
+footer .last-row .back {
+  float: right; 
+}
     /*** UTILIDADES***/
 /*Colores de texto*/
 .text-white{
-  color: white;
+  color: white !important;
 }
 /*Colores de fondo*/
 .bg-blue{
